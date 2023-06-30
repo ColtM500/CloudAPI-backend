@@ -12,8 +12,8 @@
     <groupId>com.yupi</groupId>
     <artifactId>springboot-init</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>springboot-init</name>
-    <description>springboot 初始项目</description>
+    <name>云天API开放平台</name>
+    <description>云天API开放平台</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>
