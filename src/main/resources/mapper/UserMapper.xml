@@ -23,4 +23,14 @@
         userPassword,createTime,updateTime,
         isDelete
     </sql>
+
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id" parameterType="com.yupi.project.model.entity.User">
+        INSERT INTO user (userName, userAccount, userAvatar,
+                          gender, userPassword,
+                          createTime, updateTime, isDelete)
+        VALUES (#{userName}, #{userAccount}, #{userAvatar},
+                #{gender}, #{userPassword},
+                #{createTime},#{updateTime}, #{isDelete})
+    </insert>
+
 </mapper>
