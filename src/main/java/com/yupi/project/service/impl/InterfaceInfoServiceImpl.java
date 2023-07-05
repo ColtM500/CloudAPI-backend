@@ -50,7 +50,7 @@ public class InterfaceInfoServiceImpl extends ServiceImpl<InterfaceInfoMapper, I
             }
         }
         //非创建 更新的时候 判断字段是否合理
-        if (StringUtils.isNotBlank(name) && name.length() < 50) {
+        if (StringUtils.isNotBlank(name) && name.length() > 50) {
             throw new BusinessException(ErrorCode.PARAMS_ERROR, "名称过长");
         }
 
